@@ -19,7 +19,8 @@ Además, hemos incluido una variable, la de intensidad de luz ambiente. Esta var
 
 Para la vela que no tiene carril el programa es distinto, ya que no puede seguir línea para aproximarse. En este caso hemos preparado un programa que utiliza el sensor de luz que tiene Ciberpy. Este sensor mide la cantidad de luz que el robot recibe. Así el programa se muestra a continuación.
 
-<img width="500" height="388" alt="image" src="https://github.com/user-attachments/assets/7f37f392-6d23-4166-b702-64a11233bbc2" />
+<img width="902" height="379" alt="image" src="https://github.com/user-attachments/assets/76377637-9dc0-4328-9b81-df11980466d3" />
+
 
 Hemos creado dos variables, la luz actual y la luz anterior. La luz actual es la que el robot detecta en el momento con su sensor de luz mientras que la luz anterior es la que detectó en una medición anterior. Ambas son medidas por tanto de igual manera y con el mismo sensor lo que queda fijado con los bloques de fija luz anterior a la medición de luz ambiente. Entendemos que si la luz actual es mayor que la luz anterior (en la última medición sale un nivel mayor de intensidad lumninosa)significa que el robot se está acercando al incendio. Por eso le decimos que avance. Si no, significa que el robot no se acerca al incendio, por lo que el robot hará movimientos en giro (le hemos puesto un bloque de girar a la izquierda 0,2s)y vaya parando el motor repetidamente. Esto lo hará mientras no entienda que la intensidad de luz aumenta.
 Sí hemos tenido distintos problemas con este sensor, siendo el principal el que desde arriba parece detectar muy bien la luz, pero le cuesta más su detección cuando la luz está a nivel del suelo. 
